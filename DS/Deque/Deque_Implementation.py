@@ -1,7 +1,8 @@
 from collections import deque
 
 '''       
-deque class Methods---> [ 'append', 'appendleft', 'clear', 'copy', 'count', 
+deque class Methods---> 
+[ 'append', 'appendleft', 'clear', 'copy', 'count', 
 'extend', 'extendleft', 'index', 'insert', 'maxlen', 'pop', 'popleft', 'remove',
 'reverse', 'rotate']            
  
