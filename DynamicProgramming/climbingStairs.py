@@ -1,6 +1,6 @@
 # Find all the possible ways to climb a stairs if only one or two steps are allowed
 
-def climbStairs(n):
+def climbStairs(n,x):
     if n in {0,1,2}:
         return n
     
