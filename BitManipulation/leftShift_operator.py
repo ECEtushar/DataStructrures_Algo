@@ -16,6 +16,8 @@ def leftShift(number:int, limiter:int):
     return dec_result
 
 
+
+
 if __name__ == "__main__":
     num = 5
     shift = 1
