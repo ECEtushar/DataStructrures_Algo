@@ -6,5 +6,5 @@ def sayDigits(n,arr):
     print(arr[n%10],end=' ')
 
 
-map=['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine']
 sayDigits(67501,map)
+map=['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine']
