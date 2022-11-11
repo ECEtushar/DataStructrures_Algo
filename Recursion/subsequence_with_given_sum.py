@@ -1,4 +1,4 @@
-# Printing the subsequences with K sum usin recursion
+# Printing the subsequences with K sum using recursion
 def k_sum(arr,k,ind=0,temp=[],s=0):
     if ind>=len(arr):
         if s==k:
