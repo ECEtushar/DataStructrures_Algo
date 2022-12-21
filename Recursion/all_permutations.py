@@ -48,8 +48,8 @@ def main(arr, approach):
 
 
 if __name__ == "__main__":
-    array=[1,2]
-    main(array, "I")
+    array=[1,2,3]
+    main(array, "II")
 
 
 
