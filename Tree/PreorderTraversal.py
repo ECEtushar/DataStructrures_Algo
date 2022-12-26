@@ -1,12 +1,13 @@
-from sample_tree import root
+from Tree import root
+
+def preorder(root):
+    if root == None:
+        return
+
+    print(root.data,end=',')
+    preorder(root.left)
+    preorder(root.right)
 
 
-def Preorder(root):
-
-    if root!=None:
-        print(root.k,end=' ')
-        Preorder(root.left)
-        Preorder(root.right)
-
-
-Preorder(root)
+if __name__ == "__main__":
+    preorder(root)

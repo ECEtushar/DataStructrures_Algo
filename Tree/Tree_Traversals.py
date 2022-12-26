@@ -1,4 +1,4 @@
-from sample_tree import root
+from Tree import root
 
 class Traversal:
     def __init__(self,root):

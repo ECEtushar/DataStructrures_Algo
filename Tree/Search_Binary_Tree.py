@@ -1,4 +1,4 @@
-from sample_tree import root
+from Tree import root
 
 def srch(root, n):
     if root == None:

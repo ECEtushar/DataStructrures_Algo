@@ -1,10 +1,15 @@
-from sample_tree import root
+from Tree import root, show_tree
 
-def Postorder(root):
-    if root!=None:
-        Postorder(root.left)
-        Postorder(root.right)
-        print(root.k,end=' ')
+def postorder(root):
+    if root == None:
+        return
+    
+    postorder(root.left)
+    postorder(root.right)
+    print(root.data,end=',')
+    
 
 
-Postorder(root)
+if __name__ == "__main__":
+    show_tree()
+    postorder(root)

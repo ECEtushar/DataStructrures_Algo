@@ -1,6 +1,6 @@
 class Tree:
     def __init__(self, k):
-        self.k = k
+        self.data = k
         self.left = None
         self.right = None
 
@@ -14,3 +14,15 @@ root.right.left = Tree(40)  # Left child of root 30
 root.right.right = Tree(50)  # Right child of root 30
 root.right.right.left = Tree(310) # Left child of root 50
 #root.right.right.left.left = Tree(111)
+def show_tree():
+    tree = """
+              10
+            /    \  
+          20      30
+        /    \   /   \\
+     100    400 40   50
+                    /
+                 310
+
+    """
+    print(tree)
