@@ -5,24 +5,23 @@ class Tree:
         self.right = None
 
 
-root = Tree(10)  # Root of tree
-root.left = Tree(20)  # Left child of root 10
-root.left.left = Tree(100)  # Left child of root 20
-root.left.right = Tree(400)  # Right child of root 20
-root.right = Tree(30)  # Right child of root 10
-root.right.left = Tree(40)  # Left child of root 30
-root.right.right = Tree(50)  # Right child of root 30
-root.right.right.left = Tree(310) # Left child of root 50
-#root.right.right.left.left = Tree(111)
+root = Tree(1)  # Root of tree
+root.left = Tree(2)  # Left child of root 10
+root.right = Tree(3)  # Left child of root 20
+root.left.left = Tree(4)
+root.left.right = Tree(5)
+root.left.right.left = Tree(6)
+root.left.right.right = Tree(7)
 def show_tree():
     tree = """
-              10
+              1
             /    \  
-          20      30
-        /    \   /   \\
-     100    400 40   50
-                    /
-                 310
+           2       3
+         /   \       \n
+       4      5 
+             /  \\
+            6    7
+                 
 
     """
     print(tree)

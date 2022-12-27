@@ -9,21 +9,23 @@ def inorder(root):
     inorder(root.right)
 
 def inorder_loop(root):
-    if root ==None:
-        return
-    stk =[root]
+    if root == None:
+        return 
+
+    curr = root
+    stack = []
     res=[]
-    while stk!=[]:
-        if stk[-1].left!=None:
-            stk.append(stk[-1].left)
+    while True:
+        if curr!=None:
+            stack.append(curr)
+            curr = curr.left
         else:
-            curr = stk.pop()
-            res.append(curr.data)
-            if curr.right != None:
-                stk.append(curr.right)
-            else:
-                curr = stk.pop()
-                res.append(curr.data)
+            if stack==[]:
+                break
+            e = stack.pop()
+            res.append(e.data)
+            curr = e.right
+
     print(res)
 
 
