@@ -16,7 +16,7 @@ def levelOrder(root):
             arr.append(curr.right)
 
         
-
-show_tree()
-levelOrder(root)
+if __name__ == "__main__":
+    show_tree()
+    levelOrder(root)
 

@@ -8,8 +8,26 @@ def postorder(root):
     postorder(root.right)
     print(root.data,end=',')
     
+def postorder_loop(root):
+    if root is None:
+        return None
+    st = [root]
+    res=[]
+    while st!=[]:
+        
+        curr = st[-1]
+        if curr.right != None:
+            st.append(curr.right)
 
+        if curr.left != None:
+            st.append(curr.left)
+        
+        curr = st.pop()
+        res.append(curr.data)
+    return res
 
 if __name__ == "__main__":
     show_tree()
     postorder(root)
+    print("\n")
+    print("Iterative -> ",postorder_loop(root))
