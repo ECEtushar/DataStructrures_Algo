@@ -11,20 +11,28 @@ def postorder(root):
 def postorder_loop(root):
     if root is None:
         return None
-    st = [root]
+    
+    stack = [root]
     res=[]
-    while st!=[]:
-        
-        curr = st[-1]
-        if curr.right != None:
-            st.append(curr.right)
 
+    while stack != []:
+        # take out topmost element from stack
+        curr = stack.pop()
+
+        # check wether left of curr is null
         if curr.left != None:
-            st.append(curr.left)
+            stack.append(curr.left)
         
-        curr = st.pop()
+        # check wether right of curr is null
+        if curr.right!=None:
+            stack.append(curr.right)
+            
+        #put the poped element to 2nd stack (res)
         res.append(curr.data)
-    return res
+
+
+
+    return res[::-1]
 
 if __name__ == "__main__":
     show_tree()
