@@ -8,7 +8,7 @@ def postorder(root):
     postorder(root.right)
     print(root.data,end=',')
 
-    
+# postorder traversal using 2 stacks    
 def postorder_loop(root):
     if root is None:
         return None
@@ -34,6 +34,8 @@ def postorder_loop(root):
 
 
     return res[::-1]
+        
+        
 
 if __name__ == "__main__":
     show_tree()
