@@ -9,17 +9,22 @@ def preorder(root):
     preorder(root.right)
 
 def preorder_loop(root):
-    if root is None:
+    if root == None:
         return None
-    st = [root]
-    res=[]
-    while st!=[]:
-        curr = st.pop()
-        res.append(curr.data)
+
+    stack = [root]
+    res = []
+    while stack != []:
+        curr = stack.pop()
+        
         if curr.right != None:
-            st.append(curr.right)
-        if curr.left != None:
-            st.append(curr.left)
+            stack.append(curr.right)
+
+        if curr.left!=None:
+            stack.append(curr.left)
+
+        res.append(curr.data) 
+    
     return res
 
 if __name__ == "__main__":

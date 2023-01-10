@@ -7,6 +7,7 @@ def postorder(root):
     postorder(root.left)
     postorder(root.right)
     print(root.data,end=',')
+
     
 def postorder_loop(root):
     if root is None:
